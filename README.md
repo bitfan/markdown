@@ -5,6 +5,8 @@
 其实最终以GitHub为准，如果实在不知道，可以先写一个标题，提交到GitHub，然后用右键拷贝链接看那个标题的锚链接是什么。
 > Here's a tip -- if you're having trouble with your anchor not working due to misspellings or odd characters, simply hover over your heading on Github, then hover or click the link icon that appears to the left. You can then right click to copy the link location, left click it to go to the URL and view it in your address bar, or simply stay hovered over it and view it in the status bar of your browser.
 
+参考：[Anchors in Markdown](https://gist.github.com/asabaylus/3071099)
+
 可以测试以下几种锚链接：
 ### English Anchor
 这个标题是英文的
@@ -43,3 +45,15 @@
 [Ready, set, GO!](#ready-set-go)
 ```
 
+## 同一项目中不同文件的交叉链接
+如果在同一个项目中，可以使用相对路径：
+[这个链接到另一个文件](other.md)
+```md
+[这个链接到另一个文件](other.md)
+```
+
+也可以链接到另一个文件中的锚点：
+[另一个文件的锚点](other.md#这里链接回主文件)
+```md
+[另一个文件的锚点](other.md#这里链接回主文件)
+```
